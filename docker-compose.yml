@@ -24,9 +24,10 @@ services:
   api-gateway-db:
     image: postgres:latest
     environment:
-      - POSTGRES_USER=${GW_DB_POSTGRES_USER}
-      - POSTGRES_PASSWORD=${GW_DB_POSTGRES_PASSWORD}
-      - POSTGRES_DB=${GW_DB_POSTGRES_DB}
+      - POSTGRES_USER=${GW_DB_USER}
+      - POSTGRES_PASSWORD=${GW_DB_PASSWORD}
+      - POSTGRES_DB=${GW_DB_NAME}
+      - PGPORT=${GW_DB_PORT}
     volumes:
       - api-gateway-db-data:/var/lib/postgresql/data
     networks:
