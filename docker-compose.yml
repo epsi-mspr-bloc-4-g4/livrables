@@ -1,0 +1,132 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    image: ghcr.io/epsi-mspr-bloc-4-g4/api-gateway/api-gateway:latest
+    environment:
+      - DATABASE_URL=${GW_APP_DATABASE_URL}
+      - PORT=${GW_APP_PORT}
+      - NODE_ENV=${NODE_ENV}
+      - CUSTOMER_API_URI=${GW_APP_CUSTOMER_API_URI}
+      - ORDER_API_URI=${GW_APP_ORDER_API_URI}
+      - PRODUCT_API_URI=${GW_APP_PRODUCT_API_URI}
+      - JWT_SECRET=${GW_APP_JWT_SECRET}
+      - REGISTER_SECRET=${GW_APP_REGISTER_SECRET}
+    networks:
+      api-network:
+        aliases:
+          - api-gateway
+    ports:
+      - "3000:3000"
+    pull_policy: always
+    restart: unless-stopped
+
+  api-gateway-db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=${GW_DB_POSTGRES_USER}
+      - POSTGRES_PASSWORD=${GW_DB_POSTGRES_PASSWORD}
+      - POSTGRES_DB=${GW_DB_POSTGRES_DB}
+    volumes:
+      - api-gateway-db-data:/var/lib/postgresql/data
+    networks:
+      api-network:
+        aliases:
+          - api-gateway-db
+
+  api-clients:
+    image: ghcr.io/epsi-mspr-bloc-4-g4/api-clients/api-clients:latest
+    environment:
+      - DATABASE_URL=${CUS_APP_DATABASE_URL}
+      - PORT=${CUS_APP_PORT}
+      - NODE_ENV=${NODE_ENV}
+      - KAFKA_SERVER=${KAFKA_SERVER}
+      - DEFAULT_SET_TIMEOUT=${KAFKA_DEFAULT_SET_TIMEOUT}
+    networks:
+      api-network:
+        aliases:
+          - api-clients
+    pull_policy: always
+    restart: unless-stopped
+
+  api-clients-db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=${CUS_DB_USER}
+      - POSTGRES_PASSWORD=${CUS_DB_PASSWORD}
+      - POSTGRES_DB=${CUS_DB_NAME}
+      - PGPORT=${CUS_DB_PORT}
+    volumes:
+      - api-clients-db-data:/var/lib/postgresql/data
+    networks:
+      api-network:
+        aliases:
+          - api-clients-db
+
+  api-orders:
+    image: ghcr.io/epsi-mspr-bloc-4-g4/api-commandes/api-commandes:latest
+    environment:
+      - DATABASE_URL=${ORD_APP_DATABASE_URL}
+      - PORT=${ORD_APP_PORT}
+      - NODE_ENV=${NODE_ENV}
+      - KAFKA_SERVER=${KAFKA_SERVER}
+      - DEFAULT_SET_TIMEOUT=${KAFKA_DEFAULT_SET_TIMEOUT}
+    networks:
+      api-network:
+        aliases:
+          - api-orders
+    pull_policy: always
+    restart: unless-stopped
+
+  api-orders-db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=${ORD_DB_USER}
+      - POSTGRES_PASSWORD=${ORD_DB_PASSWORD}
+      - POSTGRES_DB=${ORD_DB_NAME}
+      - PGPORT=${ORD_DB_PORT}
+    volumes:
+      - api-orders-db-data:/var/lib/postgresql/data
+    networks:
+      api-network:
+        aliases:
+          - api-orders-db
+
+  api-products:
+    image: ghcr.io/epsi-mspr-bloc-4-g4/api-produits/api-produits:latest
+    environment:
+      - DATABASE_URL=${PRO_APP_DATABASE_URL}
+      - PORT=${PRO_APP_PORT}
+      - NODE_ENV=${NODE_ENV}
+      - KAFKA_SERVER=${KAFKA_SERVER}
+      - DEFAULT_SET_TIMEOUT=${KAFKA_DEFAULT_SET_TIMEOUT}
+    networks:
+      api-network:
+        aliases:
+          - api-products
+    pull_policy: always
+    restart: unless-stopped
+
+  api-products-db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=${PRO_DB_USER}
+      - POSTGRES_PASSWORD=${PRO_DB_PASSWORD}
+      - POSTGRES_DB=${PRO_DB_NAME}
+      - PGPORT=${PRO_DB_PORT}
+    volumes:
+      - api-products-db-data:/var/lib/postgresql/data
+    networks:
+      api-network:
+        aliases:
+          - api-products-db
+
+networks:
+  api-network:
+    driver: bridge
+
+volumes:
+  api-gateway-db-data:
+  api-clients-db-data:
+  api-orders-db-data:
+  api-products-db-data:
