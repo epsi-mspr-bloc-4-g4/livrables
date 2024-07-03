@@ -1,0 +1,39 @@
+[
+  {
+    "createdAt": "2023-08-29T23:00:30.215Z",
+    "id": "12",
+    "customerId": "20",
+    "products": [
+      {
+        "createdAt": "2023-08-30T10:18:30.734Z",
+        "name": "Diana Schowalter MD",
+        "details": {
+          "price": "834.00",
+          "description": "The Football Is Good For Training And Recreational Purposes",
+          "color": "red"
+        },
+        "stock": 56401,
+        "id": "12",
+        "orderId": "12"
+      },
+      {
+        "createdAt": "2023-08-30T13:15:40.661Z",
+        "name": "Calvin Mohr",
+        "details": {
+          "price": "165.00",
+          "description": "The Football Is Good For Training And Recreational Purposes",
+          "color": "plum"
+        },
+        "stock": 85808,
+        "id": "62",
+        "orderId": "12"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-29T22:56:10.538Z",
+    "id": "62",
+    "customerId": "20",
+    "products": []
+  }
+]
