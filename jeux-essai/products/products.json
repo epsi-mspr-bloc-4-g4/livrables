@@ -1,0 +1,200 @@
+[
+  {
+    "createdAt": "2023-08-30T13:25:32.033Z",
+    "name": "Emily Mraz Jr.",
+    "details": {
+      "price": "738.00",
+      "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "color": "magenta"
+    },
+    "stock": 56558,
+    "id": "4"
+  },
+  {
+    "createdAt": "2023-08-30T07:29:29.695Z",
+    "name": "Lonnie Schuppe DDS",
+    "details": {
+      "price": "753.00",
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "color": "fuchsia"
+    },
+    "stock": 65152,
+    "id": "5"
+  },
+  {
+    "createdAt": "2023-08-29T14:39:54.335Z",
+    "name": "Clint Boyer",
+    "details": {
+      "price": "746.00",
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "color": "blue"
+    },
+    "stock": 90214,
+    "id": "6"
+  },
+  {
+    "createdAt": "2023-08-30T06:55:20.905Z",
+    "name": "Kottea CK150S",
+    "details": {
+      "price": "599",
+      "description": "La Kottea CK150S est une machine expresso polyvalente, mais simple d'utilisation grâce aux filtres pressurisés et filtre simples fournis. Équipée d'un porte-filtre 58 mm professionnel et d'une dose programmable avec un timer digital, elle est également très performante en termes de puissance vapeur. Garantie 2 ans. Livraison gratuite.",
+      "color": "olive"
+    },
+    "stock": 5549,
+    "id": "7"
+  },
+  {
+    "createdAt": "2023-08-30T06:44:19.836Z",
+    "name": "Marianne VonRueden",
+    "details": {
+      "price": "154.00",
+      "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "color": "teal"
+    },
+    "stock": 25994,
+    "id": "9"
+  },
+  {
+    "createdAt": "2023-08-30T02:49:49.316Z",
+    "name": "Dr. Jeanne Streich",
+    "details": {
+      "price": "608.00",
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "color": "tan"
+    },
+    "stock": 82498,
+    "id": "10"
+  },
+  {
+    "createdAt": "2023-08-30T10:53:17.204Z",
+    "name": "Ernestine Willms",
+    "details": {
+      "price": "662.00",
+      "description": "The Football Is Good For Training And Recreational Purposes",
+      "color": "mint green"
+    },
+    "stock": 92876,
+    "id": "11"
+  },
+  {
+    "createdAt": "2023-08-30T02:05:10.215Z",
+    "name": "Yvonne Fisher",
+    "details": {
+      "price": "358.00",
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "color": "mint green"
+    },
+    "stock": 68486,
+    "id": "12"
+  },
+  {
+    "createdAt": "2023-08-30T04:12:31.944Z",
+    "name": "Lynn Skiles",
+    "details": {
+      "price": "963.00",
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "color": "blue"
+    },
+    "stock": 5563,
+    "id": "13"
+  },
+  {
+    "createdAt": "2023-08-29T19:07:33.554Z",
+    "name": "April McDermott",
+    "details": {
+      "price": "14.00",
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "color": "orchid"
+    },
+    "stock": 81671,
+    "id": "14"
+  },
+  {
+    "createdAt": "2023-08-30T07:08:07.927Z",
+    "name": "Faye Johnston",
+    "details": {
+      "price": "85.00",
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "color": "sky blue"
+    },
+    "stock": 85672,
+    "id": "15"
+  },
+  {
+    "createdAt": "2023-08-30T03:55:30.652Z",
+    "name": "Erin Cruickshank",
+    "details": {
+      "price": "828.00",
+      "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "color": "olive"
+    },
+    "stock": 17170,
+    "id": "16"
+  },
+  {
+    "createdAt": "2023-08-30T02:10:41.062Z",
+    "name": "Garry Collier V",
+    "details": {
+      "price": "705.00",
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "color": "indigo"
+    },
+    "stock": 48448,
+    "id": "17"
+  },
+  {
+    "createdAt": "2023-08-29T17:17:51.545Z",
+    "name": "Minnie Ratke",
+    "details": {
+      "price": "182.00",
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "color": "orchid"
+    },
+    "stock": 22303,
+    "id": "18"
+  },
+  {
+    "createdAt": "2023-08-29T14:57:51.828Z",
+    "name": "Ann Bernhard",
+    "details": {
+      "price": "190.00",
+      "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "color": "magenta"
+    },
+    "stock": 71956,
+    "id": "19"
+  },
+  {
+    "createdAt": "2023-08-29T19:55:57.395Z",
+    "name": "Bessie Blanda",
+    "details": {
+      "price": "551.00",
+      "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "color": "maroon"
+    },
+    "stock": 90810,
+    "id": "20"
+  },
+  {
+    "createdAt": "2023-08-29T23:27:54.267Z",
+    "name": "Ms. Angel Mante",
+    "details": {
+      "price": "315.00",
+      "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "color": "tan"
+    },
+    "stock": 43645,
+    "id": "21"
+  },
+  {
+    "createdAt": "2023-08-29T15:52:31.410Z",
+    "name": "Neal MacGyver",
+    "details": {
+      "price": "251.00",
+      "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "color": "cyan"
+    },
+    "stock": 5935,
+    "id": "22"
+  }
+]
